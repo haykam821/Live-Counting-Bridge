@@ -1,0 +1,23 @@
+{
+	"name": "live-counting-bridge",
+	"description": "Bridges live counting threads using Matterbridge.",
+	"version": "1.0.0",
+	"main": "./src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/haykam821/Live-Counting-Bridge.git"
+	},
+	"keywords": [
+		"reddit-live",
+		"matterbridge"
+	],
+	"author": "haykam821",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/haykam821/Live-Counting-Bridge/issues"
+	},
+	"homepage": "https://github.com/haykam821/Live-Counting-Bridge#readme"
+}
