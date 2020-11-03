@@ -19,5 +19,11 @@
 	"bugs": {
 		"url": "https://github.com/haykam821/Live-Counting-Bridge/issues"
 	},
-	"homepage": "https://github.com/haykam821/Live-Counting-Bridge#readme"
+	"homepage": "https://github.com/haykam821/Live-Counting-Bridge#readme",
+	"dependencies": {
+		"cosmiconfig": "^7.0.0",
+		"debug": "^4.2.0",
+		"got": "^11.8.0",
+		"ws": "^7.3.1"
+	}
 }
