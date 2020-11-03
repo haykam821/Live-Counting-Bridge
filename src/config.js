@@ -1,3 +1,5 @@
+/* eslint-disable unicorn/no-process-exit */
+
 const { cosmiconfigSync } = require("cosmiconfig");
 
 const debug = require("debug");
@@ -44,7 +46,7 @@ function getConfig() {
 	});
 
 	const result = explorer.search();
-	
+
 	if (result.filepath) {
 		log("loaded configuration from '%s'", result.filepath);
 	} else {

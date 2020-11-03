@@ -8,8 +8,8 @@ const ws = require("ws");
 const { version } = require("../package.json");
 const got = baseGot.extend({
 	headers: {
-		"User-Agent": "Live Counting Bridge v" + version,
 		"Content-Type": "application/json",
+		"User-Agent": "Live Counting Bridge v" + version,
 	},
 	responseType: "json",
 });
@@ -41,7 +41,7 @@ class Thread {
 	connect() {
 		const aboutUrl = this.getAboutUrl();
 		this.log("requesting thread info from %s", aboutUrl);
-		
+
 		got(aboutUrl, {
 			throwHttpErrors: false,
 		}).then(this.onThreadInfo).catch(error => {
@@ -80,7 +80,7 @@ class Thread {
 
 	/**
 	 * Handles a websocket message event.
-	 * @param {string} data
+	 * @param {string} data The websocket message data.
 	 */
 	onMessage(data) {
 		const json = JSON.parse(data);
@@ -89,7 +89,7 @@ class Thread {
 
 			got.post(config.apiBase + "/api/message", {
 				headers: {
-					"Authorization": config.token && "Bearer " + config.token,
+					Authorization: config.token && "Bearer " + config.token,
 				},
 				json: {
 					gateway: this.gateway,
